@@ -1,30 +1,36 @@
-Nand2Tetris Project 1: Boolean Logic
+# Nand2Tetris Projects
 
-My implementation of Project 1 from Nand2Tetris, focused on building fundamental digital logic gates using the Hardware Description Language (HDL).
+My implementations of projects from **The Elements of Computing Systems (Nand2Tetris)** by Noam Nisan and Shimon Schocken.
 
-Overview
+The goal is to build a complete computer system from the ground up, starting from elementary logic gates and gradually working toward a functioning computer.
 
-The project starts with the primitive "Nand" gate and uses it to construct increasingly complex logic gates and components.
+---
 
-Implemented Chips
+## Projects Completed
 
-- "Not"
-- "And"
-- "Or"
-- "Xor"
-- "Mux"
-- "DMux"
-- "Not16"
-- "And16"
-- "Or16"
-- "Mux16"
-- "Or8Way"
-- "Mux4Way16"
-- "Mux8Way16"
-- "DMux4Way"
-- "DMux8Way"
+### Project 1: Boolean Logic
 
-Concepts
+Implemented fundamental logic gates and multi-bit/multi-way logic components using the Nand gate.
+
+#### Implemented Chips
+
+- `Not`
+- `And`
+- `Or`
+- `Xor`
+- `Mux`
+- `DMux`
+- `Not16`
+- `And16`
+- `Or16`
+- `Mux16`
+- `Or8Way`
+- `Mux4Way16`
+- `Mux8Way16`
+- `DMux4Way`
+- `DMux8Way`
+
+#### Concepts
 
 - Boolean algebra
 - Logic gates
@@ -35,12 +41,44 @@ Concepts
 - Multi-way selection
 - Hardware Description Language (HDL)
 
-Tools
+---
+
+### Project 2: Boolean Arithmetic
+
+Built the arithmetic components required to construct the Hack computer's Arithmetic Logic Unit.
+
+#### Implemented Chips
+
+- `HalfAdder`
+- `FullAdder`
+- `Add16`
+- `Inc16`
+- `ALU`
+
+#### Concepts
+
+- Binary addition
+- Half adders
+- Full adders
+- Ripple-carry addition
+- Two's complement arithmetic
+- Incrementers
+- Arithmetic and logical operations
+- ALU design
+- Zero and negative flags
+- Hardware composition
+
+---
+
+## Tools
 
 - Nand2Tetris Hardware Simulator
 - Nand2Tetris HDL
-- Git / GitHub
+- Git
+- GitHub
 
-Course
+## Course
 
-This project is part of The Elements of Computing Systems (Nand2Tetris) by Noam Nisan and Shimon Schocken.
+This repository is part of **The Elements of Computing Systems (Nand2Tetris)** by Noam Nisan and Shimon Schocken.
+
+The projects progressively build a computer system from the hardware level upward.
