@@ -1,84 +1,199 @@
-# Nand2Tetris Projects
+Nand2Tetris Projects 1–6
 
-My implementations of projects from **The Elements of Computing Systems (Nand2Tetris)** by Noam Nisan and Shimon Schocken.
+My implementation of Nand2Tetris Projects 1–6, covering the construction of a computer system from basic logic gates through machine language and an assembler.
 
-The goal is to build a complete computer system from the ground up, starting from elementary logic gates and gradually working toward a functioning computer.
+Progress
 
----
+Project| Topic| Status
+Project 1| Boolean Logic| ✅ Completed
+Project 2| Boolean Arithmetic| ✅ Completed
+Project 3| Memory| ✅ Completed
+Project 4| Machine Language| ✅ Completed
+Project 5| Computer Architecture| ✅ Completed
+Project 6| Assembler| ✅ Completed
 
-## Projects Completed
+Project 1: Boolean Logic
 
-### Project 1: Boolean Logic
+Implemented the fundamental logic gates required by the Hack computer platform.
 
-Implemented fundamental logic gates and multi-bit/multi-way logic components using the Nand gate.
+Concepts covered:
 
-#### Implemented Chips
-
-- `Not`
-- `And`
-- `Or`
-- `Xor`
-- `Mux`
-- `DMux`
-- `Not16`
-- `And16`
-- `Or16`
-- `Mux16`
-- `Or8Way`
-- `Mux4Way16`
-- `Mux8Way16`
-- `DMux4Way`
-- `DMux8Way`
-
-#### Concepts
-
-- Boolean algebra
-- Logic gates
-- Combinational logic
+- NAND
+- NOT
+- AND
+- OR
+- XOR
 - Multiplexers
 - Demultiplexers
 - Multi-bit logic
-- Multi-way selection
-- Hardware Description Language (HDL)
+- Multi-way gates
 
----
+Project 2: Boolean Arithmetic
 
-### Project 2: Boolean Arithmetic
+Built the arithmetic components used by the Hack ALU.
 
-Built the arithmetic components required to construct the Hack computer's Arithmetic Logic Unit.
+Components include:
 
-#### Implemented Chips
+- Half Adder
+- Full Adder
+- Add16
+- Inc16
+- ALU
 
-- `HalfAdder`
-- `FullAdder`
-- `Add16`
-- `Inc16`
-- `ALU`
+The ALU combines arithmetic and logical operations into a single processing unit.
 
-#### Concepts
+Project 3: Memory
 
-- Binary addition
-- Half adders
-- Full adders
-- Ripple-carry addition
-- Two's complement arithmetic
-- Incrementers
-- Arithmetic and logical operations
-- ALU design
-- Zero and negative flags
-- Hardware composition
+Implemented the sequential logic and memory hierarchy required by the Hack computer.
 
----
+Components include:
 
-## Tools
+- Bit
+- Register
+- RAM8
+- RAM64
+- RAM512
+- RAM4K
+- RAM16K
+- PC
 
-- Nand2Tetris Hardware Simulator
-- Nand2Tetris HDL
+This project introduced the concepts of state, registers, addressing, and sequential logic.
+
+Project 4: Machine Language
+
+Worked directly with the Hack machine language and instruction set.
+
+Covered:
+
+- A-instructions
+- C-instructions
+- Symbols
+- Labels
+- Variables
+- CPU registers
+- Memory addresses
+- Assembly programming
+
+Example:
+
+@2
+D=A
+@3
+D=D+A
+@0
+M=D
+
+Project 5: Computer Architecture
+
+Built the main components of the Hack computer.
+
+Components include:
+
+- CPU
+- Memory
+- Computer
+
+The CPU combines:
+
+- ALU
+- Registers
+- Instruction decoding
+- Control logic
+
+The completed computer can execute Hack machine-language programs.
+
+Project 6: Assembler
+
+Implemented a Java-based assembler that translates Hack assembly language into 16-bit Hack machine code.
+
+Components
+
+Parser.java
+Code.java
+SymbolTable.java
+Main.java
+
+Parser
+
+Responsible for reading and interpreting Hack assembly instructions.
+
+It identifies:
+
+- A-instructions
+- C-instructions
+- Labels
+
+Code
+
+Converts assembly mnemonics into their corresponding binary representations.
+
+SymbolTable
+
+Handles:
+
+- Predefined symbols
+- Labels
+- Variables
+- RAM addresses
+
+Main
+
+Coordinates the complete two-pass assembly process and generates ".hack" machine-code files.
+
+Example
+
+Input:
+
+@2
+D=A
+@3
+D=D+A
+@0
+M=D
+
+Output:
+
+0000000000000010
+1110110000010000
+0000000000000011
+1110000010010000
+0000000000000000
+1110001100001000
+
+Technologies
+
+- Java
+- Hack Assembly
+- Nand2Tetris Hardware Description Language (HDL)
 - Git
-- GitHub
 
-## Course
+What I Learned
 
-This repository is part of **The Elements of Computing Systems (Nand2Tetris)** by Noam Nisan and Shimon Schocken.
+Through Projects 1–6, I gained practical experience with:
 
-The projects progressively build a computer system from the hardware level upward.
+- Digital logic
+- Computer arithmetic
+- Sequential circuits
+- Memory architecture
+- CPU architecture
+- Machine language
+- Assembly programming
+- Instruction encoding
+- Symbol resolution
+- Parsing
+- Two-pass assembly
+- Java file I/O
+- Basic compiler/assembler design
+
+Completion
+
+Project 1  ████████████████████ 100% ✅
+Project 2  ████████████████████ 100% ✅
+Project 3  ████████████████████ 100% ✅
+Project 4  ████████████████████ 100% ✅
+Project 5  ████████████████████ 100% ✅
+Project 6  ████████████████████ 100% ✅
+
+Nand2Tetris Projects 1–6: Completed.
+
+This repository represents my work through the hardware and machine-language portion of Nand2Tetris.
